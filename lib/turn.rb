@@ -1,5 +1,5 @@
 def turn(index)
-  
+
 end
 
 def display_board(board)
