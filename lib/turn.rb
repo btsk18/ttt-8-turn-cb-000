@@ -1,7 +1,13 @@
 def turn(board)
   puts "Please enter 1-9:"
   move = gets.chomp
-  if valid_move(board)
+  index = input_to_index(move)
+  if valid_move?(board, index)
+    move(board, index)
+  else
+    puts "Invalid move. Please try again."
+    turn(board)
+  end
 end
 
 def display_board(board)
